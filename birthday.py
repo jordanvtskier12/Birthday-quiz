@@ -35,3 +35,11 @@ name=str(input("Hello, what is your name? "))
 month=str(input("Hi "+name+", what was the name of the month you were born in? "))
 year=int(input("And what year were you born in, "+name+"? "))
 day=int(input("And the day? "))
+
+if day==3 and month=="October":
+    print("Happy Birthday!")
+
+winter=['December','January','February']
+spring=['March','May','April']
+summer=['June','July','August']
+fall=['September','October','November']
