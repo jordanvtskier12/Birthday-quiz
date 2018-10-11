@@ -55,12 +55,12 @@ if month=="October" and day==31:
     print("You were born on Halloween!")
     
     
-elif month==birthmonth and day==todaydate:
+if month==birthmonth and day==todaydate:
     print("Happy birthday!")
 
 
 
-elif month in [winter] and year>=2000:
+if month in [winter] and year>=2000:
     print(str(name + ", you are a winter baby of the two thousands."))
 elif month in [spring] and year>=2000: 
     print(str(name + ", you are a spring baby of the two thousands."))
@@ -70,7 +70,7 @@ elif month in [fall]  and d>=2000:
     print(str(name + ", you are a fall baby of the two thousands."))
     
     
-elif month in [winter] and year>=1990 and year<= 2000:
+if month in [winter] and year>=1990 and year<= 2000:
     print(str(name + ", you are a winter baby of the nineties."))
 elif month in [spring] and year>=1990 and year<= 2000:
     print(str(name + ", you are a spring baby of the nineties."))
@@ -80,7 +80,7 @@ elif month in [fall]  and year>=1990 and year<=2000:
     print(str(name + ", you are a fall baby of the nineties."))
     
     
-elif month in [winter] and year>=1980 and year<= 1990:
+if month in [winter] and year>=1980 and year<= 1990:
     print(str(name + ", you are a winter baby of the eighties."))
 elif month in [spring] and year>=1980 and year<= 1990:
     print(str(name + ", you are a spring baby of the eighties."))
@@ -90,7 +90,7 @@ elif month in [fall]  and year>=1980 and year<=1990:
     print(str(name + ", you are a fall baby of the eighties."))
     
     
-elif month in [winter]  and year<=1980:
+if month in [winter]  and year<=1980:
     print(str(name + ", you are a winter baby of the Stone Age."))
 elif month in [spring] and year<=1980: 
     print(str(name + ", you are a spring baby of the Stone Age."))
