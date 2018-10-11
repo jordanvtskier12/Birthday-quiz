@@ -36,10 +36,68 @@ month=str(input("Hi "+name+", what was the name of the month you were born in? "
 year=int(input("And what year were you born in, "+name+"? "))
 day=int(input("And the day? "))
 
-if day==3 and month=="October":
-    print("Happy Birthday!")
+months = ["" , "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ""]
+
 
 winter=['December','January','February']
 spring=['March','May','April']
 summer=['June','July','August']
 fall=['September','October','November']
+
+from datetime import datetime
+from calendar import month_name
+todaymonth = datetime.today().month
+todaydate = datetime.today().day
+
+
+birthmonth = months[todaymonth]
+if month=="October" and day==31:
+    print("You were born on Halloween!")
+    
+    
+elif month==birthmonth and day==todaydate:
+    print("Happy birthday!")
+
+
+
+elif month in [winter] and year>=2000:
+    print(str(name + ", you are a winter baby of the two thousands."))
+elif month in [spring] and year>=2000: 
+    print(str(name + ", you are a spring baby of the two thousands."))
+elif month in [summer] and year>=2000:
+    print(str(name +", you are a summer baby of the two thousands."))
+elif month in [fall]  and d>=2000:
+    print(str(name + ", you are a fall baby of the two thousands."))
+    
+    
+elif month in [winter] and year>=1990 and year<= 2000:
+    print(str(name + ", you are a winter baby of the nineties."))
+elif month in [spring] and year>=1990 and year<= 2000:
+    print(str(name + ", you are a spring baby of the nineties."))
+elif month in [summer] and d>=1990 and d<=2000:
+    print(str(name + ", you are a summer baby of the nineties."))
+elif month in [fall]  and year>=1990 and year<=2000:
+    print(str(name + ", you are a fall baby of the nineties."))
+    
+    
+elif month in [winter] and year>=1980 and year<= 1990:
+    print(str(name + ", you are a winter baby of the eighties."))
+elif month in [spring] and year>=1980 and year<= 1990:
+    print(str(name + ", you are a spring baby of the eighties."))
+elif month in [summer] and year>=1980 and year<=1990:
+    print(str(name + ", you are a summer baby of the eighties."))    
+elif month in [fall]  and year>=1980 and year<=1990:
+    print(str(name + ", you are a fall baby of the eighties."))
+    
+    
+elif month in [winter]  and year<=1980:
+    print(str(name + ", you are a winter baby of the Stone Age."))
+elif month in [spring] and year<=1980: 
+    print(str(name + ", you are a spring baby of the Stone Age."))
+elif month in [summer] and year<=1980:
+    print(str(name +", you are a summer baby of the Stone Age."))
+elif month in [fall] and year<=1980:
+    print(str(name + ", you are a fall baby of the Stone Age."))
+    
+    
+    
